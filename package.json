@@ -42,6 +42,7 @@
     "onchange": "^5.1.3"
   },
   "dependencies": {
-    "event-stream": "^3.3.4"
+    "event-stream": "^3.3.4",
+    "normalize.css": "^8.0.1"
   }
 }
