@@ -111,5 +111,11 @@ template { display: none; }
 [hidden] { display: none; }
 
 /* Components */
+button { width: 93px; height: 40px; border-radius: 3px; background-color: #979797; color: #ffffff; }
+
+button .btn { font-size: 18px; line-height: 42px; font-family: "Roboto"; font-weight: 300; }
+
+button .btn-orange { font-size: 18px; line-height: 42px; background-color: #f58220; font-family: "Roboto"; font-weight: 300; }
+
 /* Sections */
 /* Pages / Views */

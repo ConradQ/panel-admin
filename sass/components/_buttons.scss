@@ -1,0 +1,22 @@
+button {
+    width: 93px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #979797;
+    color: #ffffff;
+
+    .btn {
+        font-size: 18px;
+        line-height: 42px;
+       
+        font-family: "Roboto";
+        font-weight: 300;
+    }
+    .btn-orange {
+        font-size: 18px;
+        line-height: 42px;
+        background-color: $orange-button-color;
+        font-family: "Roboto";
+        font-weight: 300;
+    }
+}
