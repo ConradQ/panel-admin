@@ -1,14 +1,22 @@
 /* Colors */
-$paragraph-color: #545550;
-$brand-main-color: #ff0000;
-$sidebar-color: #1A1A1A;
-$buttons-color: #FFA524;
-$hover-color: #BACDC0;
-$background-color: #FCFDFC;
+$header-color: #a6a6a6;
+$text-color: #333333;
+$link-color: #56819f;
+$link-hover-color: #ffa200;
+$background-hover-color: #f5f5f2;
+$positive-notif-color: #96cc9b;
+$positive-notif-hover-color: #74b67a;
+$negative-notif-color: #ec7171;
+$negative-notif-hover-color: #de5252;
+$gray-button-color: #979797;
+$gray-button-hover-color: #bababa;
+$orange-button-color: #f58220;
+$orange-button-hover-color: #ffa200;
 
 /* Font sizes */
-$paragraph-font-size: 16px;
+$header-font-size: 16px;
+$paragraph-font-size: 14px;
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$brand-font: 'Roboto', "Open Sans", Helvetica, Arial;
+$paragraph-font: 'Roboto', "Open Sans", Helvetica, Arial;
