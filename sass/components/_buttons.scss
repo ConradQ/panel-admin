@@ -1,22 +1,29 @@
-button {
+.btn {
     width: 93px;
     height: 40px;
-    border-radius: 3px;
-    background-color: #979797;
+    border-radius: 5px;
     color: #ffffff;
+    font-size: 18px;
+    line-height: 42px;
+    font-family: "Roboto";
+    font-weight: 300;
+    cursor: pointer;
+}
 
-    .btn {
-        font-size: 18px;
-        line-height: 42px;
-       
-        font-family: "Roboto";
-        font-weight: 300;
+.btn-gray {
+    @extend .btn;
+    background-color: #979797;
+
+    &:hover {
+        background-color: #bababa;
     }
-    .btn-orange {
-        font-size: 18px;
-        line-height: 42px;
-        background-color: $orange-button-color;
-        font-family: "Roboto";
-        font-weight: 300;
+}
+
+.btn-orange {
+    @extend .btn;
+    background-color: $orange-button-color;
+
+    &:hover {
+        background-color: $orange-button-hover-color;
     }
 }
