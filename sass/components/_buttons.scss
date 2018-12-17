@@ -34,19 +34,10 @@
     @extend .btn;
     background-color: #e3e3e3;
     width: 203px;
-}
+    .links {
+        width: 15px;
 
-.links:before {
-    background: url(panel-admin/images/links.svg) no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
-    content: "";
-    display: inline-block;
-    color: #fff;
-    height: 10px;
-    margin-right: 3px;
-    position: relative;
-    top: -2px;
-    vertical-align: middle;
-    width: 10px;
+    }
 }
 
 /* TOP MENU BUTTONS */
@@ -113,8 +104,8 @@
     .general {
         width: 20px;
         height: 20px;
-        position: relative;
+        position: absolute;
         margin: 0 auto;
-        padding-top: 33%; 
-    
+        padding-top: 33%;  
+    }
 }
