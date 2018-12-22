@@ -15,7 +15,6 @@
 .btn-gray {
     @extend .btn;
     background-color: #979797;
-
     &:hover {
         background-color: #bababa;
     }
@@ -24,7 +23,6 @@
 .btn-orange {
     @extend .btn;
     background-color: $orange-button-color;
-
     &:hover {
         background-color: $orange-button-hover-color;
     }
@@ -34,41 +32,119 @@
     @extend .btn;
     background-color: #e3e3e3;
     width: 203px;
-}
-
-.links:before {
-    background: url(panel-admin/images/links.svg) no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
-    content: "";
-    display: inline-block;
-    color: #fff;
-    height: 10px;
-    margin-right: 3px;
-    position: relative;
-    top: -2px;
-    vertical-align: middle;
-    width: 10px;
+    .icon-links {
+        width: 15px;
+        height: 15px;
+        padding: 0 10px;
+    }
 }
 
 /* TOP MENU BUTTONS */
+.btn-refresh {
+    @extend .btn;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: $orange-button-color;
+    &:hover {
+        background-color: $orange-button-hover-color;
+    }
+    .icon-refresh {
+        position: absolute;
+        padding: 10px;
+    }
+}
+
+.btn-wallet {
+    width: 185px;
+    height: 60px;
+    background-color: #ffffff;
+    border-right: #e3e3e3 solid 1px;
+    border-left: #e3e3e3 solid 1px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background-color: $background-hover-color;
+    }
+    .icon-wallet {
+        width: 16px;
+        height: 17px;
+        margin-left: 15px;
+        padding-top: 20px;
+        color: #9c9c9c;
+        position: absolute;
+    }
+    .icon-arrow-down {
+        width: 16px;
+        height: 17px;
+        position: absolute;
+        top: 0;
+        right: 15px;
+        padding-top: 20px;
+        color: #9c9c9c;
+    }
+    .wallet-text {
+        font-size: 20px;
+        line-height: 40px;
+        color: #9c9c9c;
+        font-family: "Roboto";
+        padding-top: 8px;
+    }
+}
+
+.btn-profile {
+    width: 185px;
+    height: 60px;
+    background-color: #ffffff;
+    border-right: #e3e3e3 solid 1px;
+    border-left: #e3e3e3 solid 1px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background-color: $background-hover-color;
+    }
+    .icon-profile {
+        width: 16px;
+        height: 17px;
+        margin-left: 15px;
+        padding-top: 20px;
+        color: #9c9c9c;
+        position: absolute;
+    }
+    .link-small {
+        line-height: 40px;
+        position: relative;
+        top: 9px;
+        left: 10px;
+    }
+}
 
 .btn-notification {
     width: 58px;
     height: 60px;
     background-color: #ffffff;
+    border-right: #e3e3e3 solid 1px;
     position: relative;
     text-align: center;
     cursor: pointer;
-
     &:hover {
         background-color: $background-hover-color;
     }
 
-    .notific {
-        width: 20px;
-        height: 20px;
-        position: relative;
+    .icon-notification {
+        width: 16px;
+        height: 17px;
         margin: 0 auto;
-        padding-top: 33%; 
+        padding-top: 40%;
+        color: #9c9c9c;
+        .icon-dot-orange {
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 20px;
+        }
     }
 }
 
@@ -76,21 +152,61 @@
     width: 58px;
     height: 60px;
     background-color: #ffffff;
+    border-right: #e3e3e3 solid 1px;
     position: relative;
     text-align: center;
     cursor: pointer;
-    fill: #a6a6a6;
-
     &:hover {
         background-color: $background-hover-color;
     }
-
-    .quit {
-        width: 20px;
-        height: 20px;
-        position: relative;
+    .icon-quit {
+        width: 16px;
+        height: 17px;
         margin: 0 auto;
-        padding-top: 33%; 
+        padding-top: 40%;
+        color: #9c9c9c;
+    }
+}
+
+.table-link {
+    width: 686px;
+    height: 60px;
+    background-color: #ffffff;
+    border-top: #e3e3e3 solid 1px;
+    border-bottom: #e3e3e3 solid 1px;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        background-color: $background-hover-color;
+    }
+    .section-header {
+        line-height: 60px;
+        position: relative;
+        left: 16px;
+    }
+    .link-large {
+        line-height: 60px;
+        position: absolute;
+        top: 0;
+        left: 317px;
+    }
+    .icon-links {
+        width: 16px;
+        height: 17px;
+        position: absolute;
+        top: 0;
+        right: 63px;
+        padding-top: 22px;
+        color: $orange-button-color;
+    }
+    .icon-trash {
+        width: 16px;
+        height: 17px;
+        position: absolute;
+        top: 0;
+        right: 26px;
+        padding-top: 22px;
+        color: #9c9c9c;
     }
 }
 
@@ -100,21 +216,127 @@
     background-color: #191919;
     color: $header-color;
     font-size: 14px;
-    line-height: 42px;
-    font-family: "Roboto";
+    line-height: 40px;
+    font-family: 'Roboto';
     font-weight: 300;
+    cursor: pointer;
 }
 
 .btn-general {
     @extend .btn-menu;
     &:hover {
-        background-color: $background-hover-color;
+        background-color: #282828;
+        color: #ffffff;
+        background: url(../images/stripe-orange.svg) no-repeat;
     }
-    .general {
-        width: 20px;
-        height: 20px;
-        position: relative;
-        margin: 0 auto;
-        padding-top: 33%; 
-    
+    .icon-general {
+        position: absolute;
+        padding: 3px 20px 0 20px;
+        font-size: 16px;
+    }
+    .menu-text {
+        padding-left: 45px;
+    }
+}
+
+.btn-details {
+    @extend .btn-menu;
+    &:hover {
+        background-color: #282828;
+        color: #ffffff;
+        background: url(../images/stripe-orange.svg) no-repeat;
+    }
+    .icon-details {
+        position: absolute;
+        padding: 3px 20px 0 20px;
+        font-size: 16px;
+    }
+    .menu-text {
+        padding-left: 45px;
+    }
+}
+
+.btn-links {
+    @extend .btn-menu;
+    &:hover {
+        background-color: #282828;
+        color: #ffffff;
+        background: url(../images/stripe-orange.svg) no-repeat;
+    }
+    .icon-links {
+        position: absolute;
+        padding: 3px 20px 0 20px;
+        font-size: 16px;
+    }
+    .menu-text {
+        padding-left: 45px;
+    }
+}
+
+.btn-banners {
+    @extend .btn-menu;
+    &:hover {
+        background-color: #282828;
+        color: #ffffff;
+        background: url(../images/stripe-orange.svg) no-repeat;
+    }
+    .icon-banners {
+        position: absolute;
+        padding: 3px 20px 0 20px;
+        font-size: 16px;
+    }
+    .menu-text {
+        padding-left: 45px;
+    }
+}
+
+.btn-personal-data {
+    @extend .btn-menu;
+    &:hover {
+        background-color: #282828;
+        color: #ffffff;
+        background: url(../images/stripe-orange.svg) no-repeat;
+    }
+    .icon-personaldata {
+        position: absolute;
+        padding: 3px 20px 0 20px;
+        font-size: 16px;
+    }
+    .menu-text {
+        padding-left: 45px;
+    }
+}
+
+.btn-payout {
+    @extend .btn-menu;
+    &:hover {
+        background-color: #282828;
+        color: #ffffff;
+        background: url(../images/stripe-orange.svg) no-repeat;
+    }
+    .icon-payout {
+        position: absolute;
+        padding: 3px 20px 0 20px;
+        font-size: 16px;
+    }
+    .menu-text {
+        padding-left: 45px;
+    }
+}
+
+.btn-postback {
+    @extend .btn-menu;
+    &:hover {
+        background-color: #282828;
+        color: #ffffff;
+        background: url(../images/stripe-orange.svg) no-repeat;
+    }
+    .icon-postback {
+        position: absolute;
+        padding: 3px 20px 0 20px;
+        font-size: 16px;
+    }
+    .menu-text {
+        padding-left: 45px;
+    }
 }

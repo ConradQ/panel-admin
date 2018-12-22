@@ -1,6 +1,6 @@
 .header {
     font-size: 16px;
-    line-height: 42px;
+    line-height: 40px;
     color: $header-color;
     font-family: "Roboto";
 }
@@ -17,7 +17,7 @@
 
 p {
     font-size: 14px;
-    line-height: 42px;
+    line-height: 40px;
     color: $text-color;
     font-family: "Roboto";
     font-weight: 300;
@@ -47,17 +47,13 @@ p {
     }
 }
     
-.link-show {
+.icon-show {
     @extend .link;
-    //font-size: 13px;
-    //background: url(images/show.svg) no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
-    //background-size: 100px 80px;
-    //color: $link-color;
-    fill: $link-color;
     display: inline-block;
     width: 14px;
     height: 14px;
-    &:hover {
+    cursor: pointer;
+    .icon-show:hover {
         fill: $link-hover-color;
     }
 }
