@@ -3,10 +3,13 @@
     line-height: 40px;
     color: $header-color;
     font-family: "Roboto";
+    padding-left: 17px;
 }
 .page-header {
     @extend .header; 
     text-transform: uppercase;
+    border-bottom: #e3e3e3 solid 1px;
+    width: 1056px;
     //font-weight: 800;
 }
 

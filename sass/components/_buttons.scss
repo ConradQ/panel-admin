@@ -39,21 +39,37 @@
     }
 }
 
-/* TOP MENU BUTTONS */
 .btn-refresh {
     @extend .btn;
     width: 40px;
     height: 40px;
-    border-radius: 3px;
     background-color: $orange-button-color;
     &:hover {
         background-color: $orange-button-hover-color;
     }
     .icon-refresh {
-        position: absolute;
+        width: 15px;
+        height: 15px;
         padding: 10px;
     }
 }
+
+/* TOP MENU BUTTONS */
+/*.btn-refresh {
+    @extend .btn;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    //background: url()
+    background-color: $orange-button-color;
+    &:hover {
+        background-color: $orange-button-hover-color;
+    }
+    .icon-refresh {
+       position: absolute;
+       padding: 10px;
+    }
+}*/
 
 .btn-wallet {
     width: 185px;
@@ -93,12 +109,34 @@
     }
 }
 
+.btn-wallet-small {
+    width: 58px;
+    height: 60px;
+    background-color: #ffffff;
+    border-right: #e3e3e3 solid 1px;
+    border-left: #e3e3e3 solid 1px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background-color: $background-hover-color;
+    }
+    .icon-wallet {
+        width: 16px;
+        height: 17px;
+        margin: 0 auto;
+        padding-top: 40%;
+        color: #9c9c9c;
+        //position: absolute;
+    }
+}
+
 .btn-profile {
     width: 185px;
     height: 60px;
     background-color: #ffffff;
     border-right: #e3e3e3 solid 1px;
-    border-left: #e3e3e3 solid 1px;
+    //border-left: #e3e3e3 solid 1px;
     position: relative;
     text-align: center;
     cursor: pointer;
@@ -118,6 +156,27 @@
         position: relative;
         top: 9px;
         left: 10px;
+    }
+}
+
+.btn-profile-small {
+    width: 58px;
+    height: 60px;
+    background-color: #ffffff;
+    border-right: #e3e3e3 solid 1px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background-color: $background-hover-color;
+    }
+    .icon-profile {
+        width: 16px;
+        height: 17px;
+        margin: 0 auto;
+        padding-top: 40%;
+        color: #9c9c9c;
+        //position: absolute;
     }
 }
 
