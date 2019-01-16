@@ -32,6 +32,7 @@
     @extend .btn;
     background-color: #e3e3e3;
     width: 203px;
+<<<<<<< HEAD
     .icon-links {
         width: 15px;
         height: 15px;
@@ -51,6 +52,11 @@
         width: 15px;
         height: 15px;
         padding: 10px;
+=======
+    .links {
+        width: 15px;
+
+>>>>>>> master
     }
 }
 
@@ -296,6 +302,7 @@
     .menu-text {
         padding-left: 45px;
     }
+<<<<<<< HEAD
 }
 
 .btn-details {
@@ -397,5 +404,13 @@
     }
     .menu-text {
         padding-left: 45px;
+=======
+    .general {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        margin: 0 auto;
+        padding-top: 33%;  
+>>>>>>> master
     }
 }
